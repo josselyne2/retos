@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura cliente.servidor </title>
+</head>
+
+<body>
+    <header>
+        <!-- es el encabezado de la pag -->
+        <center>
+            <h1>ARQUITECTURA CLIENTE-SERVIDOR </h1>
+        </center>
+    </header>
+
+    <body bgcolor="#FEF9E7">
+
+        <center>
+            <img src="img/cliente.jpg" height="300" />
+        </center>
+
+        <main>
+            <section>
+                <article>
+                    <ul>
+                        <p>Arquitectura Cliente servidor. Esta arquitectura consiste básicamente en un cliente que realiza peticiones a otro programa (el servidor) que le da respuesta. Aunque esta idea se puede aplicar a programas que se ejecutan sobre una
+                            sola computadora es más ventajosa en un sistema operativo multiusuario distribuido a través de una red de computadoras. La interacción cliente-servidor es el soporte de la mayor parte de la comunicación por redes. Ayuda a comprender
+                            las bases sobre las que están construidos los algoritmos distribuidos</p>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <ul>
+                        <h2>Introduction</h2>
+                        <hr>
+                        <style>
+                            hr {
+                                height: 4px;
+                                border: none;
+                                border-radius: 5px;
+                                background: linear-gradient( to left, rgb(223, 17, 17), rgb(112, 7, 72))
+                            }
+                        </style>
+                </article>
+                <ul>
+                    <p>
+                        El servidor debe negociar con su <span style="color:rgb(235, 21, 57)">sistema operativo</span> un puerto (casi siempre bien conocido) donde esperar las solicitudes. El servidor espera pasivamente las peticiones en un puerto bien
+                        conocido que ha sido reservado para el servicio que ofrece. El cliente también solicita, a su sistema operativo, un puerto no usado desde el cual enviar su solicitud y esperar respuesta. Un cliente ubica un puerto arbitrario, no
+                        utilizado y no reservado, para su comunicación. En una interacción se necesita reservar solo uno de los dos puertos, asignados un identificador único de puerto para cada servicio, se facilita la construcción de clientes y servidores.
+                        Los servidores por lo general son más difíciles de construir que los clientes pues aunque se implantan como programas de aplicación deben manejar peticiones concurrentes, así como reforzar todos los procedimientos de acceso y protección
+                        del sistema computacional en el que corren, y protegerse contra todos los errores posibles. El cliente y el servidor pueden interactuar en la misma máquina
+                    </p>
+                </ul>
+            </section>
+
+            <section>
+                <article>
+                    <ul>
+                        <h2>Evolucion</h2>
+                        <hr>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>computadora central</h3>
+                        </li>
+                        <p>
+                            Desde sus inicios el modelo de administración de datos a través de computadoras se basaba en el uso de terminales remotas, que se conectaban de manera directa a una computadora central. Dicha computadora central se encargaba de prestar servicios caracterizados
+                            por que cada servicio se prestaba solo a un grupo exclusivo de usuarios.
+                        </p>
+
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h3>computadora dedicadas</h3>
+                        </li>
+                        <p>
+                            Esta es la era en la que cada <span style="color:rgb(235, 21, 57)">servicio</span> empleaba su propia computadora que permitía que los usuarios de ese servicio se conectaran directamente. Esto es consecuencia de la aparición
+                            de computadoras pequeñas, de fácil uso, más baratas y más poderosas de las convencionales.
+                        </p>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h3>Conexión libre</h3>
+                        </li>
+                        <p>
+                            Hace más de 10 años que las computadoras escritorio aparecieron de manera masiva. Esto permitió que parte apreciable de la carga de trabajo de cómputo tanto en el ámbito de cálculo como en el ámbito de la presentación se lleven a cabo desde el escritorio
+                            del usuario. En muchos de los casos el usuario obtiene la información que necesita de alguna computadora de servicio. Estas computadoras de escritorio se conectan a las computadoras de servicio empleando
+                            <span style="color:rgb(235, 21, 57)">software</span> que permite la emulación de algún tipo de terminal. En otros de los casos se les transfiere la información haciendo uso de recursos magnéticos o por trascripción.
+                        </p>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h3>Cómputo a través de redes</h3>
+                        </li>
+                        <p>
+                            Esta es la era que esta basada en el concepto de redes de computadoras, en la que la información reside en una o varias <span style="color:rgb(235, 21, 57)">computadoras</span>, los usuarios de esta información hacen uso de
+                            computadoras para laborar y todas ellas se encuentran conectadas entre si. Esto brinda la posibilidad de que todos los usuarios puedan acceder a la información de todas las computadoras y a la vez que los diversos sistemas
+                            intercambien información.
+                        </p>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h3>Arquitectura cliente-servidor</h3>
+                        </li>
+                        <p>
+                            en esta<span style="color:rgb(235, 21, 57)">arquitectura</span> la <span style="color:rgb(235, 21, 57)">computadora</span> de cada uno de los usuarios, llamada cliente, produce una demanda de información a cualquiera de las
+                            computadoras que proporcionan información, conocidas como servidores estos últimos responden a la demanda del cliente que la produjo. Los clientes y los servidores pueden estar conectados a una red local o una red amplia, como
+                            la que se puede implementar en una empresa o a una red mundial como lo es la Internet. Bajo este modelo cada usuario tiene la libertad de obtener la información que requiera en un momento dado proveniente de una o varias fuentes
+                            locales o distantes y de procesarla como según le convenga. Los distintos servidores también pueden intercambiar información dentro de esta arquitectura.
+                        </p>
+                    </ul>
+
+
+
+                </article>
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
